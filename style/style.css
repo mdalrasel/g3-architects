@@ -52,10 +52,12 @@ header {
 
 .banner-content {
     color: #727272;
-    margin: 20px ;
+    margin: 0px auto;
+    padding: 20px 0;
+    width: 70vw;
 }
 
-.banner-btn {
+.Explore-btn {
     font-weight: 600;
     font-size: 20px;
     color: #FFF;
@@ -69,7 +71,35 @@ header {
     padding-bottom: 20px;
 }
 .bannerImg{
-    width: 70vw;
+    width: 80vw;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+.Features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-right: 20px;
+
+}
+.Features img{
+    width: 20vw;
+    border-radius: 10px;
+}
+.Features-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.Features-titleColor{
+    color: #FF900E;
+}
+.Features-content{
+    color: #727272;
+    margin: 20px 0px;
 }
 
 @media screen and (max-width:576px) {
@@ -94,7 +124,19 @@ header {
         margin: 0;
     }
     .banner{
-        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+    main{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .Features img{
+        width: 30vw;
+        margin-bottom: 20px;
+    }
+    .Features-title{
+        font-size: 35px;
     }
 
 }
